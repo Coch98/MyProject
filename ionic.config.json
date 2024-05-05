@@ -1,0 +1,7 @@
+{
+  "name": "Medimemo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
