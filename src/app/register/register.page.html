@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="container">
+    <div class="title oval-title">Registro</div>
+    <form (ngSubmit)="register()">
+      <ion-item>
+        <ion-label position="stacked">Nombre Completo</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre" name="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Correo Electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Confirmar Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="confirmarPassword" name="password"></ion-input>
+      </ion-item>
+      <ion-button expand="block" type="submit" color="success">Registrarse</ion-button>
+      <ion-button expand="block" type="button" color="danger" (click)="cancel()">Cancelar</ion-button>
+    </form>
+  </div>
+</ion-content>
+

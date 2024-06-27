@@ -1,0 +1,73 @@
+.login-content {
+    ion-grid {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .container {
+      text-align: center;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+  
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  
+    .oval-title {
+      padding: 10px 20px;
+      border-radius: 20px; /* Ajusta el radio para obtener la forma de ovalo deseada */
+      background-color: #2dd36f;
+      color: #ffffff; 
+    }
+   
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ion-item {
+    width: 100%;
+    margin-bottom: 16px;
+    --background: #e0e0e0;
+    --border-radius: 50px; /* Ovalado */
+  }
+  
+  ion-label {
+    color: #666666;
+  }
+  
+  ion-input {
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+  
+  input {
+    background-color: #e0e0e0;
+    border-radius: 50px; /* Ovalado */
+    padding: 10px 16px;
+    box-sizing: border-box;
+  }
+  
+  ion-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  ion-button.clear-button {
+    color: black; /* Color del texto en negro */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: underline; /* Texto subrayado */
+  }
+  
+  
+  

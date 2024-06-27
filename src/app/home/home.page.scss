@@ -1,27 +1,51 @@
-#container {
-  text-align: center;
+.home-content {
+  ion-grid {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .oval-title {
+    padding: 10px 20px;
+    border-radius: 20px; /* Ajusta el radio para obtener la forma de ovalo deseada */
+    background-color: #2dd36f;
+    color: #ffffff; 
+  }
+
+  .profile-icon {
+    margin-top: -5px; /* Ajusta la posición vertical del icono según sea necesario */
+    ion-icon {
+      color: #333; /* Color del icono */
+    }
+  }
+
+  .extra-large-icon {
+    font-size: 8em; /* Tamaño del icono */
+  }
+
+  .welcome-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+  }
+ 
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-button {
+  margin-top: 20px;
 }
