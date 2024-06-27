@@ -9,8 +9,15 @@ import { Router } from '@angular/router';
 export class LoginPage {
   email: string = '';
   password: string = '';
+  mostrarContrasena: boolean = false; 
 
   constructor(private router: Router) { }
+
+  ionViewWillEnter() {
+    // Reiniciar valores de los campos
+    this.email = '';
+    this.password = '';
+  }
 
   login() {
     // Aquí agregarías la lógica para iniciar sesión
@@ -20,5 +27,9 @@ export class LoginPage {
 
   register() {
     this.router.navigate(['/register']);
+  }
+
+  toggleMostrarContrasena() {
+    this.mostrarContrasena = !this.mostrarContrasena;
   }
 }

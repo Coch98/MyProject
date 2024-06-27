@@ -11,11 +11,23 @@ export class RegisterPage {
   email: string= '';
   password: string= '';
   confirmarPassword: string= '';
+  mostrarContrasena: boolean = false; 
+  mostrarConfirmarContrasena: boolean = false;
 
   constructor(private router: Router) { }
 
+  ionViewWillEnter() {
+    // Reiniciar valores de los campos
+    this.nombre = '';
+    this.email = '';
+    this.password = '';
+    this.confirmarPassword = '';
+    this.mostrarContrasena = false;
+    this.mostrarConfirmarContrasena = false;
+  }
+
   register() {
-    // Aquí agregarías la lógica para registrar el usuario
+    // Lógica para registrar el usuario
     console.log('Usuario registrado:', this.nombre, this.email);
     this.router.navigate(['/login']);
   }
@@ -23,4 +35,13 @@ export class RegisterPage {
   cancel() {
     this.router.navigate(['/login']);
   }
+
+  toggleMostrarContrasena() {
+    this.mostrarContrasena = !this.mostrarContrasena;
+  }
+
+  toggleMostrarConfirmarContrasena() {
+    this.mostrarConfirmarContrasena = !this.mostrarConfirmarContrasena;
+  }
+
 }
